@@ -45,17 +45,26 @@
 //	return 0;
 //}
 
-int global = 2021;
-
-void test()
-{
-	printf("text()-%d\n", global);
-}
+//int global = 2021;
+//
+//void test()
+//{
+//	printf("text()-%d\n", global);
+//}
+//
+//int main()
+//{
+//	test();
+//	printf("%d\n", global);
+//
+//	return 0;
+//}
 
 int main()
 {
-	test();
-	printf("%d\n", global);
+	//extern 调用外部文件全局变量
+	extern int g_val;
+	printf("g_val = %d\n", g_val);
 
 	return 0;
 }
