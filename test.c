@@ -69,11 +69,59 @@
 //	return 0;
 //}
 
-int main()
+//int main()
+//{
+//	char arr[10] = {0};
+//	scanf("%s", arr);
+//	printf("%s\n", arr);
+//
+//	return 0;
+//}
+
+////define常量
+//#define MAX 10
+//int main()
+//{
+//	printf("%d", MAX);
+//	return 0;
+//}
+
+////枚举 - enum //自带默认值
+//enum Sex
+//{
+//	MALE,
+//	FEMALE,
+//	SELECT
+//};
+////MALE FEMALE SELECT - 枚举常量
+//
+//int main()
+//{
+//	enum Sex s = FEMALE;
+//	printf("%d", s);
+//	return 0;
+//}
+
+//字符串结束标志 - '\0' 转义字符 不算字符串内容
+int main() 
 {
-	char arr[10] = {0};
-	scanf("%s", arr);
-	printf("%s\n", arr);
+	char arr1[] = "abc";
+	char arr2[] = {97,'b','c','\0'};
+
+	printf("%s\n", arr1);
+	printf("%s\n", arr2);
+
+	//strlen() - 计算字符串长度
+
+	printf("%d\n", strlen(arr1));
+	printf("%d\n", strlen(arr2));
+
+	printf("D:\\vs_project\\a2021_1_14\n");
+
+	//\ddd - 8进制转10进制  ascii码值
+	//\xdd - 16进制转10进制 ascii码值
+	printf("\132\n");
+	printf("\x61\n");
 
 	return 0;
 }
