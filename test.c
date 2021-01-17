@@ -36,7 +36,7 @@
 //	int sum = 0;
 //
 //	//输入函数	
-//	scanf_s("%d%d",&num1, &num2);//&取地址符号
+//	scanf("%d%d",&num1, &num2);//&取地址符号
 //	//c语音语法规定，变量要定义在当前代码块的最前面
 //	sum = num1 + num2;
 //	printf("sum = %d\n", sum);
@@ -60,11 +60,20 @@
 //	return 0;
 //}
 
+//int main()
+//{
+//	//extern 调用外部文件全局变量
+//	extern int g_val;
+//	printf("g_val = %d\n", g_val);
+//
+//	return 0;
+//}
+
 int main()
 {
-	//extern 调用外部文件全局变量
-	extern int g_val;
-	printf("g_val = %d\n", g_val);
+	char arr[10] = {0};
+	scanf("%s", arr);
+	printf("%s\n", arr);
 
 	return 0;
 }
